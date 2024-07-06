@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Mr7ba Bik f'lu3bat lbatare9</h1>
+        <p>yalah nl3bu chwia.</p>
+        <button onclick="startGame()">Start</button>
+    </div>
+    
+    <div id="clue1" class="clue hidden">
+        <p>Su2al 1: What is my favorite color?</p>
+        <input type="text" id="answer1" placeholder="Type your answer here">
+        <button onclick="checkAnswer1()">Submit</button>
+        <div id="wrong-answer-panel1" class="wrong-answer-panel"></div>
+    </div>
+    <div id="clue2" class="clue hidden">
+        <p>Su2al 2: Where did we first meet?</p>
+        <input type="text" id="answer2" placeholder="Type your answer here">
+        <button onclick="checkAnswer2()">Submit</button>
+        <div id="wrong-answer-panel2" class="wrong-answer-panel"></div>
+    </div>
+    <div id="clue3" class="clue hidden">
+        <p>Su2al 3: What is my favorite person's name?</p>
+        <input type="text" id="answer3" placeholder="Type your answer here">
+        <button onclick="checkAnswer3()">Submit</button>
+        <div id="wrong-answer-panel3" class="wrong-answer-panel"></div>
+    </div>
+    <div id="apology" class="hidden">
+        <div class="container">
+            <div class="balloons">
+                <div class="balloon balloon1"></div>
+                <div class="balloon balloon2"></div>
+                <div class="balloon balloon3"></div>
+            </div>
+            <div class="message">
+                <h1>I'm Sorry</h1>
+                <p>sorry 3la dakshy li tra lbare7.</p>
+                <p>♡</p>
+            </div>
+        </div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
